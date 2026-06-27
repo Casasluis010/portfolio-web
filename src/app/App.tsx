@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ArrowUpRight, Github, Linkedin, Mail, ExternalLink, Monitor, Smartphone, Zap } from "lucide-react";
 
 // @ts-ignore
-import demoGif from "../assets/demo.gif";
+import demoGif from "../assets/demo-final.gif";
 
 // @ts-ignore
 import miFoto from "../assets/foto_perfil.jpg";

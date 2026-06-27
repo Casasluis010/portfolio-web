@@ -97,7 +97,7 @@ export default function App() {
       {/* Nav */}
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-          <span className="font-mono text-xs text-primary tracking-widest">FRONTEND DEV / 2024</span>
+          <span className="font-mono text-xs text-primary tracking-widest">FRONTEND DEV / 2026</span>
           <nav className="hidden md:flex items-center gap-8">
             {["Sobre mí", "Proyectos", "Experiencia", "Contacto"].map((item) => (
               <a
@@ -167,22 +167,7 @@ export default function App() {
         </div>
 
         {/* Socials */}
-        <div className="flex items-center gap-6 mt-16 pt-8 border-t border-border">
-          {[
-            { icon: Github, label: "GitHub", href: "#" },
-            { icon: Linkedin, label: "LinkedIn", href: "#" },
-            { icon: Mail, label: "Email", href: "mailto:tu@email.com" },
-          ].map(({ icon: Icon, label, href }) => (
-            <a
-              key={label}
-              href={href}
-              className="flex items-center gap-2 font-mono text-xs text-muted-foreground hover:text-primary transition-colors group"
-            >
-              <Icon size={14} className="group-hover:scale-110 transition-transform" />
-              {label}
-            </a>
-          ))}
-        </div>
+        
       </section>
 
       {/* Sobre mí */}

@@ -1,11 +1,14 @@
 import { useState } from "react";
 import { ArrowUpRight, Github, Linkedin, Mail, ExternalLink, Monitor, Smartphone, Zap } from "lucide-react";
 
+//@ts-ignore
+import demoCartelera from "../assets/demo_cartelera.mp4";
+
 // @ts-ignore
 import demoGif from "../assets/demo-final.gif";
 
 // @ts-ignore
-import miFoto from "../assets/foto_perfil.jpg";
+import miFoto from "../assets/foto_perfil (2).jpg";
 
 const PROFILE_IMG = miFoto;
 
@@ -26,20 +29,6 @@ const skills = [
     category: "Herramientas",
     items: ["Git & GitHub", "Vite", "Figma"],
   },
-];
-
-const projects = [
-  {
-    id: "hospitalsys",
-    title: "HospitalSys - Sistema Integral de Gestión",
-    year: "2026",
-    tags: ["React", "Flask", "MySQL"],
-    description:
-      "Desarrollo Full-Stack que incluye un dashboard interactivo, centro de notificaciones, y gestión completa de pacientes y personal. Implementa manejo seguro de subida de archivos, sistema de autenticación y la integración de un chatbot de asistencia.",
-    link: "#",
-    repo: "#",
-    highlight: "Proyecto TFG",
-  }
 ];
 
 const experience = [
@@ -165,9 +154,6 @@ export default function App() {
             <div className="absolute -bottom-3 -right-3 w-full h-full border border-primary/30 pointer-events-none" />
           </div>
         </div>
-
-        {/* Socials */}
-        
       </section>
 
       {/* Sobre mí */}
@@ -186,7 +172,7 @@ export default function App() {
           </div>
           <div className="grid grid-cols-2 gap-px bg-border">
             {[
-              { value: "4 Meses", label: "Experienccia en DataQuantum como becario" },
+              { value: "1 Año", label: "Experiencia en DataQuantum como becario" },
               { value: "Proyecto TFG", label: "Sistema Full Stack" },
               { value: "100%", label: "Responsive siempre" },
               { value: "95+", label: "Lighthouse score" },
@@ -237,157 +223,245 @@ export default function App() {
 
       {/* Proyectos */}
       <section id="proyectos" className="py-20 max-w-5xl mx-auto px-6">
-  <SectionLabel number="03" label="Proyectos" />
-  
-  <div className="space-y-px bg-border">
-    {/* Proyecto Único: HospitalSys */}
-    <div
-      className="bg-card group cursor-pointer"
-      onMouseEnter={() => setActiveProject("hospitalsys")}
-      onMouseLeave={() => setActiveProject(null)}
-    >
-      <div className="p-6 md:p-8">
-        <div className="flex items-start justify-between gap-4">
-          <div className="flex-1 min-w-0">
-            
-            {/* Etiquetas Superiores */}
-            <div className="flex items-center gap-3 mb-3 flex-wrap">
-              <span className="font-mono text-xs text-primary">01</span>
-              <span className="font-mono text-xs text-muted-foreground">2026</span>
-              
-              {/* Tecnologías */}
-              <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">React</span>
-              <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Flask</span>
-              <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">MySQL</span>
-              
-              {/* Highlight */}
-              <span className="font-mono text-xs text-primary/70 border border-primary/30 px-2 py-0.5">
-                Proyecto TFG
-              </span>
-            </div>
-            
-            {/* Título */}
-            <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
-              HospitalSys - Sistema Integral de Gestión Hospitalaria
-            </h3>
-            
-            {/* Descripción Desplegable (Animación) */}
-            <div
-              className="overflow-hidden transition-all duration-300"
-              style={{
-                maxHeight: activeProject === "hospitalsys" ? "500px" : "0",
-                opacity: activeProject === "hospitalsys" ? 1 : 0,
-              }}
-            >
-              <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl mb-4">
-                Desarrollo Full-Stack que incluye un dashboard interactivo, centro de notificaciones, y gestión completa de pacientes y personal. Implementa manejo seguro de subida de archivos (documentos médicos/imágenes), sistema de autenticación y la integración de un chatbot de asistencia.
-              </p>
-              
-              {/* Demo Visual GIF */}
-              <div className="mt-4 rounded-lg overflow-hidden border border-border bg-black/20 aspect-video relative max-w-2xl">
-                <img 
-                  src={demoGif} 
-                  alt="Demo interactiva de HospitalSys" 
-                  className="w-full h-full object-cover" 
-                />
+        <SectionLabel number="03" label="Proyectos" />
+        
+        <div className="space-y-4">
+          
+          {/* Proyecto 1: HospitalSys */}
+          <div
+            className="bg-card group cursor-pointer border border-transparent hover:border-border transition-colors"
+            onMouseEnter={() => setActiveProject("hospitalsys")}
+            onMouseLeave={() => setActiveProject(null)}
+          >
+            <div className="p-6 md:p-8">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1 min-w-0">
+                  
+                  {/* Etiquetas Superiores */}
+                  <div className="flex items-center gap-3 mb-3 flex-wrap">
+                    <span className="font-mono text-xs text-primary">01</span>
+                    <span className="font-mono text-xs text-muted-foreground">2026</span>
+                    
+                    {/* Tecnologías */}
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">React</span>
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Flask</span>
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">MySQL</span>
+                    
+                    {/* Highlight */}
+                    <span className="font-mono text-xs text-primary/70 border border-primary/30 px-2 py-0.5">
+                      Proyecto TFG
+                    </span>
+                  </div>
+                  
+                  {/* Título y Enlaces (GitHub) */}
+                  <div className="flex items-center gap-3 mb-3">
+                    <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                      HospitalSys - Sistema Integral de Gestión Hospitalaria
+                    </h3>
+                    <div className="flex items-center gap-2 ml-2">
+                      <a 
+                        href="#" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        title="Repositorio en GitHub (Próximamente)"
+                      >
+                        <Github size={20} />
+                      </a>
+                    </div>
+                  </div>
+                  
+                  {/* Descripción Desplegable (Animación) */}
+                  <div
+                    className="overflow-hidden transition-all duration-300"
+                    style={{
+                      maxHeight: activeProject === "hospitalsys" ? "500px" : "0",
+                      opacity: activeProject === "hospitalsys" ? 1 : 0,
+                    }}
+                  >
+                    <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl mb-4">
+                      Desarrollo Full-Stack que incluye un dashboard interactivo, centro de notificaciones, y gestión completa de pacientes y personal. Implementa manejo seguro de subida de archivos (documentos médicos/imágenes), sistema de autenticación y la integración de un chatbot de asistencia.
+                    </p>
+                    
+                    {/* Demo Visual GIF */}
+                    <div className="mt-4 rounded-lg overflow-hidden border border-border bg-black/20 aspect-video relative max-w-2xl">
+                      <img 
+                        src={demoGif} 
+                        alt="Demo interactiva de HospitalSys" 
+                        className="w-full h-full object-cover" 
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
-
             </div>
           </div>
-          
+
+          {/* Proyecto 2: Cartelera de Cine */}
+          <div
+            className="bg-card group cursor-pointer border border-transparent hover:border-border transition-colors"
+            onMouseEnter={() => setActiveProject("cartelera")}
+            onMouseLeave={() => setActiveProject(null)}
+          >
+            <div className="p-6 md:p-8">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1 min-w-0">
+                  
+                  {/* Etiquetas Superiores */}
+                  <div className="flex items-center gap-3 mb-3 flex-wrap">
+                    <span className="font-mono text-xs text-primary">02</span>
+                    <span className="font-mono text-xs text-muted-foreground">2026</span>
+                    
+                    {/* Tecnologías */}
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">React</span>
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">JavaScript</span>
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Tailwind CSS</span>
+                  </div>
+                  
+                  {/* Título y Enlaces (GitHub + Demo) */}
+                  <div className="flex items-center gap-3 mb-3">
+                    <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                      Movie Tracker - Cartelera Interactiva
+                    </h3>
+                    <div className="flex items-center gap-2 ml-2">
+                      <a 
+                        href="https://github.com/Casasluis010/proyecto_cine.git" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        title="Código en GitHub"
+                      >
+                        <Github size={20} />
+                      </a>
+                      <a 
+                        href="https://proyecto-cine-green.vercel.app/" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        title="Ver Demo en Vivo"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    </div>
+                  </div>
+                  
+                  {/* Descripción Desplegable (Animación) */}
+                  <div
+                    className="overflow-hidden transition-all duration-300"
+                    style={{
+                      maxHeight: activeProject === "cartelera" ? "500px" : "0",
+                      opacity: activeProject === "cartelera" ? 1 : 0,
+                    }}
+                  >
+                    <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl mb-4">
+                      Aplicación web para explorar carteleras de cine en tiempo real. Desarrollada con enfoque en UI/UX, permite a los usuarios buscar películas, ver detalles y navegar por catálogos inspirados en la experiencia de Letterboxd.
+                    </p>
+                    
+                    {/* Demo Visual Video */}
+                      <div className="mt-4 rounded-lg overflow-hidden border border-border bg-black/20 aspect-video relative max-w-2xl">
+                        <video 
+                          src={demoCartelera} 
+                          autoPlay 
+                          loop 
+                          muted 
+                          playsInline
+                          className="w-full h-full object-cover" 
+                        />
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Experiencia */}
-    <section id="experiencia" className="py-20 max-w-5xl mx-auto px-6">
-  <SectionLabel number="04" label="Experiencia" />
-  <div>
-    {experience.map((exp, i) => (
-      <div
-        key={i}
-        className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-12 py-8 border-b border-border last:border-0 group hover:bg-card/50 px-4 -mx-4 transition-colors"
-      >
+      <section id="experiencia" className="py-20 max-w-5xl mx-auto px-6">
+        <SectionLabel number="04" label="Experiencia" />
         <div>
-          <p className="font-mono text-xs text-muted-foreground tracking-wide">{exp.period}</p>
+          {experience.map((exp, i) => (
+            <div
+              key={i}
+              className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-12 py-8 border-b border-border last:border-0 group hover:bg-card/50 px-4 -mx-4 transition-colors"
+            >
+              <div>
+                <p className="font-mono text-xs text-muted-foreground tracking-wide">{exp.period}</p>
+              </div>
+              <div>
+                <p className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                  {exp.role}
+                </p>
+                <p className="font-mono text-xs text-primary mb-3">{exp.company}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">{exp.desc}</p>
+              </div>
+            </div>
+          ))}
         </div>
-        <div>
-          <p className="font-semibold text-foreground group-hover:text-primary transition-colors">
-            {exp.role}
-          </p>
-          <p className="font-mono text-xs text-primary mb-3">{exp.company}</p>
-          <p className="text-sm text-muted-foreground leading-relaxed">{exp.desc}</p>
-        </div>
-      </div>
-    ))}
-  </div>
-</section>
+      </section>
 
       {/* Contacto */}
       <section id="contacto" className="py-20 max-w-5xl mx-auto px-6">
-  <SectionLabel number="05" label="Contacto" />
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-    <div>
-      <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-        ¿Necesitas un<br />
-        <span className="text-primary">Frontend dev?</span>
-      </h2>
-      <p className="text-muted-foreground leading-relaxed mb-8">
-        Enfocado en dar el salto a entornos corporativos y proyectos tecnológicos de alto impacto. Busco integrarme a equipos multidisciplinares donde pueda aportar mi base técnica sólida, trabajar bajo metodologías ágiles y seguir creciendo profesionalmente. ¿Hablamos?
-      </p>
-      {/* Botón principal actualizado para abrir web de Gmail */}
-      <a
-        href="https://mail.google.com/mail/?view=cm&fs=1&to=luiscasas10102@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 font-semibold text-lg hover:bg-primary/90 transition-colors"
-      >
-        Escribime <ArrowUpRight size={18} />
-      </a>
-    </div>
-    <div className="space-y-4">
-      {[
-        { 
-          label: "Email", 
-          value: "luiscasas10102@gmail.com", 
-          /* Enlace actualizado para web de Gmail y external en true */
-          href: "https://mail.google.com/mail/?view=cm&fs=1&to=luiscasas10102@gmail.com",
-          external: true 
-        },
-        { 
-          label: "LinkedIn", 
-          value: "linkedin.com/in/luis-casas", 
-          href: "https://www.linkedin.com/in/luis-casas-b4919a397", 
-          external: true 
-        },
-        { 
-          label: "GitHub", 
-          value: "github.com/Casasluis010", 
-          href: "https://github.com/Casasluis010", 
-          external: true 
-        },
-      ].map((contact) => (
-        <a
-          key={contact.label}
-          href={contact.href}
-          target={contact.external ? "_blank" : undefined}
-          rel={contact.external ? "noopener noreferrer" : undefined}
-          className="flex items-center justify-between p-4 border border-border hover:border-primary hover:bg-card transition-all group"
-        >
-          <span className="font-mono text-xs text-muted-foreground tracking-widest">
-            {contact.label.toUpperCase()}
-          </span>
-          <span className="text-sm text-foreground group-hover:text-primary transition-colors flex items-center gap-2">
-            {contact.value}
-            <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-          </span>
-        </a>
-      ))}
-    </div>
-  </div>
-</section>
+        <SectionLabel number="05" label="Contacto" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+              ¿Necesitas un<br />
+              <span className="text-primary">Frontend dev?</span>
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              Enfocado en dar el salto a entornos corporativos y proyectos tecnológicos de alto impacto. Busco integrarme a equipos multidisciplinares donde pueda aportar mi base técnica sólida, trabajar bajo metodologías ágiles y seguir creciendo profesionalmente. ¿Hablamos?
+            </p>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=luiscasas10102@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 font-semibold text-lg hover:bg-primary/90 transition-colors"
+            >
+              Escribime <ArrowUpRight size={18} />
+            </a>
+          </div>
+          <div className="space-y-4">
+            {[
+              { 
+                label: "Email", 
+                value: "luiscasas10102@gmail.com", 
+                href: "https://mail.google.com/mail/?view=cm&fs=1&to=luiscasas10102@gmail.com",
+                external: true 
+              },
+              { 
+                label: "LinkedIn", 
+                value: "linkedin.com/in/luis-casas", 
+                href: "https://www.linkedin.com/in/luis-casas-b4919a397", 
+                external: true 
+              },
+              { 
+                label: "GitHub", 
+                value: "github.com/Casasluis010", 
+                href: "https://github.com/Casasluis010", 
+                external: true 
+              },
+            ].map((contact) => (
+              <a
+                key={contact.label}
+                href={contact.href}
+                target={contact.external ? "_blank" : undefined}
+                rel={contact.external ? "noopener noreferrer" : undefined}
+                className="flex items-center justify-between p-4 border border-border hover:border-primary hover:bg-card transition-all group"
+              >
+                <span className="font-mono text-xs text-muted-foreground tracking-widest">
+                  {contact.label.toUpperCase()}
+                </span>
+                <span className="text-sm text-foreground group-hover:text-primary transition-colors flex items-center gap-2">
+                  {contact.value}
+                  <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="border-t border-border py-8 max-w-5xl mx-auto px-6">

@@ -172,7 +172,7 @@ export default function App() {
           </div>
           <div className="grid grid-cols-2 gap-px bg-border">
             {[
-              { value: "1 Año", label: "Experiencia en DataQuantum como becario" },
+              { value: "1 Año", label: "Experiencia en Desarrollo Frontend." },
               { value: "Proyecto TFG", label: "Sistema Full Stack" },
               { value: "100%", label: "Responsive siempre" },
               { value: "95+", label: "Lighthouse score" },

@@ -99,7 +99,7 @@ export default function App() {
             ))}
           </nav>
           <a
-            href="mailto:tu@email.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=luiscasas10102@gmail.com"
             className="flex items-center gap-2 bg-primary text-primary-foreground font-mono text-xs px-4 py-2 hover:bg-primary/90 transition-colors tracking-wider"
           >
             DISPONIBLE <span className="w-2 h-2 rounded-full bg-primary-foreground animate-pulse" />

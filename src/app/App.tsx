@@ -321,7 +321,7 @@ export default function App() {
                   {/* Título y Enlaces (GitHub + Demo) */}
                   <div className="flex items-center gap-3 mb-3">
                     <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
-                      Movie Tracker - Cartelera Interactiva
+                      Cinema Showtimes - Cartelera Interactiva
                     </h3>
                     <div className="flex items-center gap-2 ml-2">
                       <a 

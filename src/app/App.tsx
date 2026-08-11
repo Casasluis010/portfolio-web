@@ -408,7 +408,7 @@ export default function App() {
           <div>
             <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
               ¿Necesitas un<br />
-              <span className="text-primary">Frontend dev?</span>
+              <span className="text-primary">Desarrollador Frontend?</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
               Enfocado en dar el salto a entornos corporativos y proyectos tecnológicos de alto impacto. Busco integrarme a equipos multidisciplinares donde pueda aportar mi base técnica sólida, trabajar bajo metodologías ágiles y seguir creciendo profesionalmente. ¿Hablamos?

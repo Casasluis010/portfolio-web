@@ -334,7 +334,7 @@ export default function App() {
                         <Github size={20} />
                       </a>
                       <a 
-                        href="https://proyecto-cine-green.vercel.app/" 
+                        href="https://cinema-proyect.vercel.app/" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="text-muted-foreground hover:text-primary transition-colors"

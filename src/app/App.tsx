@@ -317,6 +317,12 @@ export default function App() {
                     <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">JavaScript</span>
                     <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Tailwind CSS</span>
                   </div>
+                   
+                  {/*HigthLigth*/}
+                   <span className="font-mono text-xs text-primary/70 border border-primary/30 px-2 py-0.5">
+                      Proyecto Personal
+                    </span>
+                  </div>
                   
                   {/* Título y Enlaces (GitHub + Demo) */}
                   <div className="flex items-center gap-3 mb-3">

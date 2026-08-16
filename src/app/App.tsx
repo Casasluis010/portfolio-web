@@ -325,7 +325,7 @@ export default function App() {
                     </h3>
                     <div className="flex items-center gap-2 ml-2">
                       <a 
-                        href="https://github.com/Casasluis010/proyecto_cine.git" 
+                        href="https://github.com/Casasluis010/cinema_proyect" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="text-muted-foreground hover:text-primary transition-colors"

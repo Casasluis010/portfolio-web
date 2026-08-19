@@ -321,11 +321,11 @@ export default function App() {
                   {/* Título y Enlaces (GitHub + Demo) */}
                   <div className="flex items-center gap-3 mb-3">
                     <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
-                      Movie Tracker - Cartelera Interactiva
+                      Cinema Showtimes - Cartelera Interactiva
                     </h3>
                     <div className="flex items-center gap-2 ml-2">
                       <a 
-                        href="https://github.com/Casasluis010/proyecto_cine.git" 
+                        href="https://github.com/Casasluis010/cinema_proyect" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="text-muted-foreground hover:text-primary transition-colors"
@@ -334,7 +334,7 @@ export default function App() {
                         <Github size={20} />
                       </a>
                       <a 
-                        href="https://proyecto-cine-green.vercel.app/" 
+                        href="https://cinema-proyect.vercel.app/" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="text-muted-foreground hover:text-primary transition-colors"
@@ -408,7 +408,7 @@ export default function App() {
           <div>
             <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
               ¿Necesitas un<br />
-              <span className="text-primary">Frontend dev?</span>
+              <span className="text-primary">Desarrollador Frontend?</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
               Enfocado en dar el salto a entornos corporativos y proyectos tecnológicos de alto impacto. Busco integrarme a equipos multidisciplinares donde pueda aportar mi base técnica sólida, trabajar bajo metodologías ágiles y seguir creciendo profesionalmente. ¿Hablamos?

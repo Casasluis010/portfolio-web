@@ -8,7 +8,7 @@ import demoCartelera from "../assets/demo_cartelera.mp4";
 import demoGif from "../assets/demo-final.gif";
 
 // @ts-ignore
-import miFoto from "../assets/foto_perfil (2).jpg";
+import miFoto from "../assets/foto_perfil.png";
 
 const PROFILE_IMG = miFoto;
 

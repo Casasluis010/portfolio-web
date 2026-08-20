@@ -15,19 +15,19 @@ const PROFILE_IMG = miFoto;
 const skills = [
   {
     category: "Core",
-    items: ["JavaScript (ES6+)", "TypeScript", "HTML5 semántico", "CSS3 / SCSS"],
+    items: ["JavaScript (ES6+)", "HTML5 semántico", "CSS3 Nativo", "SQL"],
   },
   {
     category: "Framework",
-    items: ["React", "FastAPI.js", "Flask Router", "Integración de APIs REST / Redux"],
+    items: ["React", "Vite", "Consumo de APIs REST"],
   },
   {
     category: "Estilos",
-    items: ["Tailwind CSS", "Styled Diseño Responsive / Mobile First", "CSS Librerías UI (ej. Recharts)", "CSS3 Nativo"],
+    items: ["Tailwind CSS", "Styled Diseño Responsive / Mobile First", "Bootstrap"],
   },
   {
     category: "Herramientas",
-    items: ["Git & GitHub", "Vite", "Figma"],
+    items: ["Git & GitHub", "Docker", "Scrum / Metodologías Ágiles"],
   },
 ];
 
@@ -36,13 +36,13 @@ const experience = [
     period: "Marzo 2026 — Junio 2026",
     role: "Becario en IA Multiagente",
     company: "DataQuantum",
-    desc: "Desarrollo backend y de APIs utilizando FastAPI para ecosistemas de IA multiagente (LangChain/LangGraph) conectados a bases de datos SQL y vectoriales. Trabajo estructurado bajo metodologías ágiles (Scrum)."
+    desc: "Desarrollo de interfaces y consumo de APIs complejas (FastAPI) para ecosistemas de IA multiagente. Colaboración bajo metodologías ágiles (Scrum) con el equipo de datos, asegurando la correcta integración y visualización de la información en el lado del cliente."
   },
   {
-    period: "Enero 2026 — Junio 2026",
-    role: "Desarrollo Full-Stack (TFG)",
+    period: "Enero 2025 — Presente",
+    role: "Desarrollador Independiente",
     company: "Metrodora",
-    desc: "Diseño y desarrollo integral de HospitalSys. Implementación de frontend con React y backend utilizando Flask y MySQL. El sistema incluye gestión de usuarios, manejo seguro de documentos y la integración de un chatbot de asistencia."
+    desc: "Conceptualización, diseño y desarrollo continuo de aplicaciones web centradas en la experiencia de usuario y el rendimiento. Creación de interfaces dinámicas utilizando React y JavaScript, integrando APIs externas y aplicando metodologías de desarrollo estructuradas (control de versiones, despliegue continuo). Enfoque en la resolución de problemas técnicos a través de la construcción de productos digitales escalables y responsivos desde cero."
   }
 ];
 
@@ -123,7 +123,7 @@ export default function App() {
               <span className="text-primary">Casas.</span>
             </h1>
             <p className="text-muted-foreground max-w-lg leading-relaxed text-lg mb-10">
-              Soy Desarrollador Frontend especializado en React y JavaScript, recientemente titulado como Técnico Superior en DAM en Metrodora. Tras mi experiencia práctica en el sector tecnológico, me dedico a crear experiencias web dinámicas, transformando diseños en código limpio y funcional, y cuidando cada detalle visual y de interacción.
+              Desarrollador Frontend especializado en React y JavaScript. Construyo aplicaciones web dinámicas, eficientes y responsivas. Aporto experiencia práctica en el sector tecnológico transformando requisitos y diseños en código limpio, escalable y centrado en la experiencia del usuario.
             </p>
             <div className="flex items-center gap-4 flex-wrap">
               <a
@@ -172,7 +172,7 @@ export default function App() {
           </div>
           <div className="grid grid-cols-2 gap-px bg-border">
             {[
-              { value: "1 Año", label: "Experiencia en Desarrollo Frontend." },
+              { value: "Mas de 1 año de experiencia", label: "" },
               { value: "Proyecto TFG", label: "Sistema Full Stack" },
               { value: "100%", label: "Responsive siempre" },
               { value: "95+", label: "Lighthouse score" },
@@ -316,6 +316,11 @@ export default function App() {
                     <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">React</span>
                     <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">JavaScript</span>
                     <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Tailwind CSS</span>
+
+                    <span className="font-mono text-xs text-primary/70 border border-primary/30 px-2 py-0.5">
+                      Proyecto propio
+                    </span>
+
                   </div>
                   
                   {/* Título y Enlaces (GitHub + Demo) */}
@@ -411,7 +416,7 @@ export default function App() {
               <span className="text-primary">Desarrollador Frontend?</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Enfocado en dar el salto a entornos corporativos y proyectos tecnológicos de alto impacto. Busco integrarme a equipos multidisciplinares donde pueda aportar mi base técnica sólida, trabajar bajo metodologías ágiles y seguir creciendo profesionalmente. ¿Hablamos?
+              Enfocado en aportar valor a entornos corporativos y proyectos tecnológicos de alto impacto. Busco integrarme a equipos multidisciplinares donde pueda aplicar mi base técnica sólida (React, JavaScript, SQL), trabajar bajo metodologías ágiles (Scrum) y contribuir a soluciones escalables. ¿Hablamos?
             </p>
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=luiscasas10102@gmail.com"
@@ -419,7 +424,7 @@ export default function App() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 font-semibold text-lg hover:bg-primary/90 transition-colors"
             >
-              Escribime <ArrowUpRight size={18} />
+              Contactar <ArrowUpRight size={18} />
             </a>
           </div>
           <div className="space-y-4">

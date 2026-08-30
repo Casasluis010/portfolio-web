@@ -39,10 +39,10 @@ const experience = [
     desc: "Desarrollo de interfaces y consumo de APIs complejas (FastAPI) para ecosistemas de IA multiagente. Colaboración bajo metodologías ágiles (Scrum) con el equipo de datos, asegurando la correcta integración y visualización de la información en el lado del cliente."
   },
   {
-    period: "Enero 2025 — Presente",
-    role: "Desarrollador Independiente",
-    company: "Metrodora",
-    desc: "Conceptualización, diseño y desarrollo continuo de aplicaciones web centradas en la experiencia de usuario y el rendimiento. Creación de interfaces dinámicas utilizando React y JavaScript, integrando APIs externas y aplicando metodologías de desarrollo estructuradas (control de versiones, despliegue continuo). Enfoque en la resolución de problemas técnicos a través de la construcción de productos digitales escalables y responsivos desde cero."
+    period: "Diciembre 2025 — Presente",
+    role: "Desarrollador Frontend Independiente",
+    company: "Desarrollo Autónomo de Software",
+    desc: "Desarrollo continuo de aplicaciones web interactivas enfocadas en el rendimiento y la experiencia de usuario (UX/UI). Creación de interfaces dinámicas y responsivas utilizando React y JavaScript (ES6+), implementando arquitecturas de componentes y sistemas de filtrado. Experiencia práctica en la integración de APIs REST externas para el renderizado de datos y mantenimiento de código mediante Git y GitHub aplicando buenas prácticas de desarrollo."
   }
 ];
 

@@ -2,6 +2,9 @@ import { useState } from "react";
 import { ArrowUpRight, Github, Linkedin, Mail, ExternalLink, Monitor, Smartphone, Zap } from "lucide-react";
 
 //@ts-ignore
+import videoBiblioteca from '../assets/Video_biblioteca.mp4';
+
+//@ts-ignore
 import demoCartelera from "../assets/demo_cartelera.mp4";
 
 // @ts-ignore
@@ -226,78 +229,8 @@ export default function App() {
         <SectionLabel number="03" label="Proyectos" />
         
         <div className="space-y-4">
-          
-          {/* Proyecto 1: HospitalSys */}
-          <div
-            className="bg-card group cursor-pointer border border-transparent hover:border-border transition-colors"
-            onMouseEnter={() => setActiveProject("hospitalsys")}
-            onMouseLeave={() => setActiveProject(null)}
-          >
-            <div className="p-6 md:p-8">
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex-1 min-w-0">
-                  
-                  {/* Etiquetas Superiores */}
-                  <div className="flex items-center gap-3 mb-3 flex-wrap">
-                    <span className="font-mono text-xs text-primary">01</span>
-                    <span className="font-mono text-xs text-muted-foreground">2026</span>
-                    
-                    {/* Tecnologías */}
-                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">React</span>
-                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Flask</span>
-                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">MySQL</span>
-                    
-                    {/* Highlight */}
-                    <span className="font-mono text-xs text-primary/70 border border-primary/30 px-2 py-0.5">
-                      Proyecto TFG
-                    </span>
-                  </div>
-                  
-                  {/* Título y Enlaces (GitHub) */}
-                  <div className="flex items-center gap-3 mb-3">
-                    <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
-                      HospitalSys - Sistema Integral de Gestión Hospitalaria
-                    </h3>
-                    <div className="flex items-center gap-2 ml-2">
-                      <a 
-                        href="#" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                        title="Repositorio en GitHub (Próximamente)"
-                      >
-                        <Github size={20} />
-                      </a>
-                    </div>
-                  </div>
-                  
-                  {/* Descripción Desplegable (Animación) */}
-                  <div
-                    className="overflow-hidden transition-all duration-300"
-                    style={{
-                      maxHeight: activeProject === "hospitalsys" ? "500px" : "0",
-                      opacity: activeProject === "hospitalsys" ? 1 : 0,
-                    }}
-                  >
-                    <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl mb-4">
-                      Desarrollo Full-Stack que incluye un dashboard interactivo, centro de notificaciones, y gestión completa de pacientes y personal. Implementa manejo seguro de subida de archivos (documentos médicos/imágenes), sistema de autenticación y la integración de un chatbot de asistencia.
-                    </p>
-                    
-                    {/* Demo Visual GIF */}
-                    <div className="mt-4 rounded-lg overflow-hidden border border-border bg-black/20 aspect-video relative max-w-2xl">
-                      <img 
-                        src={demoGif} 
-                        alt="Demo interactiva de HospitalSys" 
-                        className="w-full h-full object-cover" 
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          {/* Proyecto 2: Cartelera de Cine */}
+          {/* Proyecto 1: Cartelera de Cine */}
           <div
             className="bg-card group cursor-pointer border border-transparent hover:border-border transition-colors"
             onMouseEnter={() => setActiveProject("cartelera")}
@@ -309,7 +242,7 @@ export default function App() {
                   
                   {/* Etiquetas Superiores */}
                   <div className="flex items-center gap-3 mb-3 flex-wrap">
-                    <span className="font-mono text-xs text-primary">02</span>
+                    <span className="font-mono text-xs text-primary">01</span>
                     <span className="font-mono text-xs text-muted-foreground">2026</span>
                     
                     {/* Tecnologías */}
@@ -364,21 +297,110 @@ export default function App() {
                     
                     {/* Demo Visual Video */}
                       <div className="mt-4 rounded-lg overflow-hidden border border-border bg-black/20 aspect-video relative max-w-2xl">
-                        <video 
-                          src={demoCartelera} 
-                          autoPlay 
-                          loop 
-                          muted 
-                          playsInline
-                          className="w-full h-full object-cover" 
-                        />
-                      </div>
+                      <video
+                        src={demoCartelera}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        controls
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+          {/* Proyecto 2: Libroteca*/}
+          <div
+            className="bg-card group cursor-pointer border border-transparent hover:border-border transition-colors"
+            onMouseEnter={() => setActiveProject("hospitalsys")}
+            onMouseLeave={() => setActiveProject(null)}
+          >
+            <div className="p-6 md:p-8">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1 min-w-0">
+                  
+                  {/* Etiquetas Superiores */}
+                  <div className="flex items-center gap-3 mb-3 flex-wrap">
+                    <span className="font-mono text-xs text-primary">02</span>
+                    <span className="font-mono text-xs text-muted-foreground">2026</span>
+                    
+                    {/* Tecnologías */}
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">React</span>
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">React Router </span>
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Tailwind CSS</span>
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Open Library API </span>
+                    
+                    {/* Highlight */}
+                    <span className="font-mono text-xs text-primary/70 border border-primary/30 px-2 py-0.5">
+                      Proyecto Propio
+                    </span>
+                  </div>
+                  
+                  {/* Título y Enlaces (GitHub) */}
+                  <div className="flex items-center gap-3 mb-3">
+                    <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                      Libroteca - Descubrí, valorá y organizá tus lecturas
+                    </h3>
+                    <div className="flex items-center gap-2 ml-2">
+                      <a 
+                        href="https://github.com/Casasluis010/Libroteca.git" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        title="Código en GitHub"
+                      >
+                        <Github size={20} />
+                      </a>
+                      <a 
+                        href="https://libroteca-theta.vercel.app/" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        title="Ver Demo en Vivo"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    </div>
+                  </div>
+                  
+                  {/* Descripción Desplegable (Animación) */}
+                  <div
+                    className="overflow-hidden transition-all duration-300"
+                    style={{
+                      maxHeight: activeProject === "hospitalsys" ? "500px" : "0",
+                      opacity: activeProject === "hospitalsys" ? 1 : 0,
+                    }}
+                  >
+                    <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl mb-4">
+                      Biblioteca personal para descubrir, valorar y organizar libros, construida
+                      sobre la API pública de Open Library. Incluye búsqueda por estado de ánimo,
+                      góndolas recomendadas, notas y citas por libro, seguimiento de progreso de
+                      lectura, listas compartibles, modo oscuro/claro automático y soporte PWA
+                      instalable. Todos los datos se guardan localmente en el navegador, sin backend.
+                    </p>
+                    
+                    {/* Demo Visual GIF */}
+                    <div className="mt-4 rounded-lg overflow-hidden border border-border bg-black/20 aspect-video relative max-w-2xl">
+                      <video
+                        src={videoBiblioteca}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        controls
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </section>
 

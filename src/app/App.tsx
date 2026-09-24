@@ -2,6 +2,9 @@ import { useState } from "react";
 import { ArrowUpRight, Github, Linkedin, Mail, ExternalLink, Monitor, Smartphone, Zap } from "lucide-react";
 
 //@ts-ignore
+import videoAurora from "../assets/video_Aurora.mp4";
+
+//@ts-ignore
 import videoBiblioteca from '../assets/Video_biblioteca.mp4';
 
 //@ts-ignore
@@ -317,7 +320,7 @@ export default function App() {
           {/* Proyecto 2: Libroteca*/}
           <div
             className="bg-card group cursor-pointer border border-transparent hover:border-border transition-colors"
-            onMouseEnter={() => setActiveProject("hospitalsys")}
+            onMouseEnter={() => setActiveProject("Libroteca")}
             onMouseLeave={() => setActiveProject(null)}
           >
             <div className="p-6 md:p-8">
@@ -372,8 +375,8 @@ export default function App() {
                   <div
                     className="overflow-hidden transition-all duration-300"
                     style={{
-                      maxHeight: activeProject === "hospitalsys" ? "500px" : "0",
-                      opacity: activeProject === "hospitalsys" ? 1 : 0,
+                      maxHeight: activeProject === "Libroteca" ? "500px" : "0",
+                      opacity: activeProject === "Libroteca" ? 1 : 0,
                     }}
                   >
                     <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl mb-4">
@@ -388,6 +391,92 @@ export default function App() {
                     <div className="mt-4 rounded-lg overflow-hidden border border-border bg-black/20 aspect-video relative max-w-2xl">
                       <video
                         src={videoBiblioteca}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        controls
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Proyecto 3: Aurora Rail*/}
+          <div
+            className="bg-card group cursor-pointer border border-transparent hover:border-border transition-colors"
+            onMouseEnter={() => setActiveProject("aurora")}
+            onMouseLeave={() => setActiveProject(null)}
+          >
+            <div className="p-6 md:p-8">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1 min-w-0">
+                  
+                  {/* Etiquetas Superiores */}
+                  <div className="flex items-center gap-3 mb-3 flex-wrap">
+                    <span className="font-mono text-xs text-primary">03</span>
+                    <span className="font-mono text-xs text-muted-foreground">2026</span>
+                    
+                    {/* Tecnologías */}
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">React</span>
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Framer Motion </span>
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Context API</span>
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Local Storage</span>
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Open Library API </span>
+                    
+                    {/* Highlight */}
+                    <span className="font-mono text-xs text-primary/70 border border-primary/30 px-2 py-0.5">
+                      Proyecto Propio
+                    </span>
+                  </div>
+                  
+                  {/* Título y Enlaces (GitHub) */}
+                  <div className="flex items-center gap-3 mb-3">
+                    <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                      Aurora Rail - Plataforma premium de reserva de trenes con UX avanzada
+                    </h3>
+                    <div className="flex items-center gap-2 ml-2">
+                      <a 
+                        href="https://github.com/Casasluis010/aurora-railways.git" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        title="Código en GitHub"
+                      >
+                        <Github size={20} />
+                      </a>
+                      <a 
+                        href="https://aurora-railways.vercel.app/" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        title="Ver Demo en Vivo"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    </div>
+                  </div>
+                  
+                  {/* Descripción Desplegable (Animación) */}
+                  <div
+                      className="overflow-hidden transition-all duration-300"
+                      style={{
+                        // CAMBIAMOS "hospitalsys" por "aurora"
+                        maxHeight: activeProject === "aurora" ? "500px" : "0",
+                        opacity: activeProject === "aurora" ? 1 : 0,
+                      }}
+                    >
+                      <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl mb-4">
+                        Aplicación web simulada para la reserva de billetes de tren de alta velocidad. Centrada en ofrecer una experiencia de usuario (UX) fluida, animaciones de nivel nativo, y una interfaz "Glassmorphism" altamente interactiva.
+                      </p>
+                    
+                    {/* Demo Visual GIF */}
+                    <div className="mt-4 rounded-lg overflow-hidden border border-border bg-black/20 aspect-video relative max-w-2xl">
+                      <video
+                        src={videoAurora}
                         autoPlay
                         loop
                         muted

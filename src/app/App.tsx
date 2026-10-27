@@ -129,7 +129,7 @@ export default function App() {
               <span className="text-primary">Casas.</span>
             </h1>
             <p className="text-muted-foreground max-w-lg leading-relaxed text-lg mb-10">
-              Desarrollador Frontend especializado en React y JavaScript. Construyo aplicaciones web dinámicas, eficientes y responsivas. Aporto experiencia práctica en el sector tecnológico transformando requisitos y diseños en código limpio, escalable y centrado en la experiencia del usuario.
+              Desarrollador Frontend especializado en React y JavaScript. Construyendo aplicaciones web dinámicas, eficientes y accesibles para todos los usuarios. Aporto experiencia tecnica en el sector tecnologico, tanto en practicas como proyectos propios.
             </p>
             <div className="flex items-center gap-4 flex-wrap">
               <a
@@ -168,7 +168,7 @@ export default function App() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <p className="text-lg leading-relaxed text-foreground/90 mb-6">
-              Como Desarrollador Frontend (React/JavaScript), mi objetivo es construir productos digitales donde la estética y el rendimiento funcionen en armonía. Fuera de la programación, soy un gran aficionado al audio de alta calidad; esa misma búsqueda de la 'fidelidad' y la atención al detalle es la que aplico cuando transformo un diseño en código interactivo.
+              Como Desarrollador Frontend, mi objetivo es construir productos digitales donde la estética y el rendimiento funcionen en armonía. Fuera de la programación, soy un gran aficionado al audio de alta calidad; esa misma búsqueda de la 'fidelidad' y la atención al detalle es la que aplico cuando transformo un diseño en código interactivo.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               El responsive web design no es un extra para mí — es el punto de partida.
@@ -178,10 +178,10 @@ export default function App() {
           </div>
           <div className="grid grid-cols-2 gap-px bg-border">
             {[
-              { value: "Mas de 1 año de experiencia", label: "" },
-              { value: "Proyecto TFG", label: "Sistema Full Stack" },
-              { value: "100%", label: "Responsive siempre" },
-              { value: "95+", label: "Lighthouse score" },
+              { value: "1 año de experiencia", label: "Desarrollo Frontend" },
+              { value: "MetrodoraFP", label: "Desarrollo Multiplataforma" },
+              { value: "100%", label: "Responsive y accesible." },
+              { value: "Practicas", label: "Experiencia Laboral" },
             ].map((stat) => (
               <div key={stat.label} className="bg-card p-6">
                 <p className="text-3xl font-bold text-primary mb-1">{stat.value}</p>
@@ -527,7 +527,7 @@ export default function App() {
               <span className="text-primary">Desarrollador Frontend?</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Enfocado en aportar valor a entornos corporativos y proyectos tecnológicos de alto impacto. Busco integrarme a equipos multidisciplinares donde pueda aplicar mi base técnica sólida (React, JavaScript, SQL), trabajar bajo metodologías ágiles (Scrum) y contribuir a soluciones escalables. ¿Hablamos?
+              Enfocado en aportar valor a entornos corporativos y proyectos tecnológicos de alto impacto. Busco integrarme a equipos multidisciplinares donde pueda aplicar mi base técnica sólida (React, TypeScript, JavaScript), trabajar bajo metodologías ágiles (Scrum) y contribuir a soluciones escalables. ¿Hablamos?
             </p>
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=luiscasas10102@gmail.com"

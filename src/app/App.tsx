@@ -464,7 +464,6 @@ export default function App() {
                   <div
                       className="overflow-hidden transition-all duration-300"
                       style={{
-                        // CAMBIAMOS "hospitalsys" por "aurora"
                         maxHeight: activeProject === "aurora" ? "500px" : "0",
                         opacity: activeProject === "aurora" ? 1 : 0,
                       }}

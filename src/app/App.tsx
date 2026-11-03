@@ -2,6 +2,9 @@ import { useState } from "react";
 import { ArrowUpRight, Github, Linkedin, Mail, ExternalLink, Monitor, Smartphone, Zap } from "lucide-react";
 
 //@ts-ignore
+import videoPortfolio from "../assets/portfolio_audiovisuales.mp4";
+
+//@ts-ignore
 import videoAurora from "../assets/video_Aurora.mp4";
 
 //@ts-ignore
@@ -477,6 +480,95 @@ export default function App() {
                     <div className="mt-4 rounded-lg overflow-hidden border border-border bg-black/20 aspect-video relative max-w-2xl">
                       <video
                         src={videoAurora}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        controls
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          {/* 4to proyecto, Portfolio para Audiovisuales */}
+          <div
+            className="bg-card group cursor-pointer border border-transparent hover:border-border transition-colors"
+            onMouseEnter={() => setActiveProject("PortfolioAudiovisual")}
+            onMouseLeave={() => setActiveProject(null)}
+          >
+            <div className="p-6 md:p-8">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1 min-w-0">
+                  
+                  {/* Etiquetas Superiores */}
+                  <div className="flex items-center gap-3 mb-3 flex-wrap">
+                    <span className="font-mono text-xs text-primary">04</span>
+                    <span className="font-mono text-xs text-muted-foreground">2026</span>
+                    
+                    {/* Tecnologías - Ajusta si usaste otras */}
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Typescript</span>
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Tailwind CSS</span>
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Framer Motion</span>
+                    <span className="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">Vite</span>
+                    
+                    {/* Highlight */}
+                    <span className="font-mono text-xs text-primary/70 border border-primary/30 px-2 py-0.5">
+                      Trabajo Freelance
+                    </span>
+                  </div>
+                  
+                  {/* Título y Enlaces (GitHub y Demo) */}
+                  <div className="flex items-center gap-3 mb-3">
+                    <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                      Portfolio Audiovisuales
+                    </h3>
+                    <div className="flex items-center gap-2 ml-2">
+                      <a 
+                        href="https://github.com/Casasluis010/portfolio-christy" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        title="Código en GitHub"
+                      >
+                        <Github size={20} />
+                      </a>
+                      <a 
+                        href="https://portfolio-christy-dun.vercel.app/" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        title="Ver Demo en Vivo"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    </div>
+                  </div>
+                  
+                  {/* Descripción Desplegable (Animación) */}
+                  <div
+                    className="overflow-hidden transition-all duration-300"
+                    style={{
+                      maxHeight: activeProject === "PortfolioAudiovisual" ? "500px" : "0",
+                      opacity: activeProject === "PortfolioAudiovisual" ? 1 : 0,
+                    }}
+                  >
+                    <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl mb-4">
+                      Desarrollo de un portfolio web a medida para una profesional del sector audiovisual. 
+                      El objetivo fue crear una interfaz minimalista e inmersiva que cediera todo el 
+                      protagonismo al contenido en video y fotografía. Se implementaron transiciones 
+                      fluidas, galerías responsivas y carga optimizada (lazy loading) para manejar 
+                      archivos multimedia pesados sin sacrificar el rendimiento.
+                    </p>
+                    
+                    {/* Demo Visual GIF / Video */}
+                    <div className="mt-4 rounded-lg overflow-hidden border border-border bg-black/20 aspect-video relative max-w-2xl">
+                      <video
+                        src={videoPortfolio} 
                         autoPlay
                         loop
                         muted

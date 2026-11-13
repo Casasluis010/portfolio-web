@@ -121,7 +121,7 @@ export default function App() {
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-12 items-end">
           <div>
             <p className="font-mono text-xs text-muted-foreground tracking-widest mb-6">
-              FRONTEND DEVELOPER — REACT · JAVASCRIPT · RESPONSIVE WEB
+              FRONTEND DEVELOPER — REACT · JAVASCRIPT · TYPESCRIPT · ANGULAR
             </p>
             <h1
               className="text-5xl md:text-7xl font-bold leading-[1.05] tracking-tight mb-6"

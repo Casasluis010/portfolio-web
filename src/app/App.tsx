@@ -16,6 +16,9 @@ import {
   Zap,
 } from "lucide-react";
 
+// @ts-ignore
+import cvPdf from "../assets/C.V_Luis_dev.pdf";
+
 //@ts-ignore
 import videoPortfolio from "../assets/portfolio_audiovisuales.mp4";
 

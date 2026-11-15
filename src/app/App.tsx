@@ -45,7 +45,7 @@ type LighthouseScores = {
 const PROFILE_IMG = miFoto;
 
 
-const CV_URL = "src/assets/C.V_Luis_dev.pdf";
+const CV_URL = cvPdf;
 const CV_FILENAME = "CV-Luis-Casas.pdf";
 
 const EMAIL = "luiscasas10102@gmail.com";
